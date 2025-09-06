@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touché</title>
+    <meta name="keysWord" content="#" />
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mapbox-gl.css">
+    <link rel="stylesheet" href="css/carouselCard.css">
+    <script src="js/carouselCard.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+</head>
+
+<body id="body" class="lightTheme">
+    <div id="navList" class="close">
+        <div class="container">
+            <a href="">ABOUT ME</a>
+            <a href="">MENU</a>
+            <a href="">RESERVATION</a>
+            <a href="">NEWS & EVENTS</a>
+            <a href="">GALLERY</a>
+            <a href="">CONTACT</a>
+            <div style="margin: 10px 0px;" class="switchColor">
+                <div class="slider Left"><i id="moon" class="fa-solid fa-moon"></i>
+                    <i id="sun" class="fa-solid fa-sun"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navBar">
+            <div class="container">
+                <div class="navLeft">
+                    <a href="">ABOUT ME</a>
+                    <a href="">MENU</a>
+                    <a href="">RESERVATION</a>
+                </div>
+
+                <h1><em>Touché</em></h1>
+
+                <label class="hamburger">
+
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <div class="navRight">
+                    <a href="">NEWS & EVENTS</a>
+                    <a href="">GALLERY</a>
+                    <a href="">CONTACT</a>
+                    <div class="switchColor">
+                        <div class="slider Left">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="nav"></div>
+        <div class="bigContainer">
+            <div class="hedImg" style="overflow: hidden;">
+            </div>
+            <div class="titleContainer">
+                <p class="firstText"><span>COFÉÉ</span> / RESTAURANT</p>
+                <h1 class="hOne">Touché</h1>
+                <p class="text">A unique café located in the heart of Los Angeles. Always fresh coffee and<br> biscuits.
+                    Open for indoor dining and to-go orders.
+                </p>
+                <a href="#registerForm">MAKE<span class="space"></span>RESERVATION</a>
+            </div>
+            <div class="lastHead">
+                <div class="left">
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+                <div class="right">
+                    <p>
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        1234 Dining Str., Los Angeles, CA 12345-0000
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container img-text ">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="imageLeft">
+                    <p>Take a coffee break or enjoy a meal.</p>
+                    <div class="imageSelector">
+                        <img src="image/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="imageRight">
+                    <h3><i>Always</i> amazing experience</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur,
+                        laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores. Possimus
+                        facilis velit, voluptatibus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container img-text img-text2" style="direction: rtl;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="imageLeft" style="direction: ltr;">
+                    <p>Great variety of foods you will enjoy.</p>
+                    <div class="imageSelector" id="imageSelector2">
+                        <img src="image/7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="imageRight" style="direction: ltr;">
+                    <h3><i>Beautiful</i> outdoor seating</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur,
+                        laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores. Possimus
+                        facilis velit, voluptatibus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imgBanner">
+        <div class="container">
+            <p class="singleP">
+                Enjoy our specialty coffees and award winning<br> doughnuts in a friendly atmosphere.
+            </p>
+        </div>
+    </div>
+    <h2 class="h2Title">Menu options</h2>
+    <p style="color:var(--c444);" class="headerGoods">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+        numquam<br> eos perferendis itaque hic unde, ad,
+        laudantium minima.</p>
+
+    <p class="listMenu"><span class="first">MAINS</span><span>LUNCH</span><span>DINNER</span><span>DRINKS</span></p>
+    <div class="container flx">
+        <div class="row">
+
+
+            <div class="goodsLeft col-lg-6">
+                <div class="food">
+                    <img src="image/26.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+
+                <div class="food">
+                    <img src="image/28.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+
+                <div class="food">
+                    <img src="image/30.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+            </div>
+
+
+            <div class="goodsRight col-lg-6">
+
+                <div class="food">
+                    <img src="image/27.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+
+                <div class="food">
+                    <img src="image/29.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+
+                <div class="food">
+                    <img src="image/31.jpg" alt="">
+                    <div class="description">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente
+                            laudantium.</p>
+                    </div>
+                    <span>$15</span>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <hr id="hr">
+
+    <h2 style="text-align: center; font-family: Playfair Display, serif;margin-top:100px;color: var(--c222);">Our <i
+            style="font-family: Playfair Display, serif;">featured</i> dishes</h2>
+    <p style="color:var(--c555);" class="headerGoods">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+        aliquam id<br> sint accusamus eius voluptatum explicabo quae similique, quas.</p>
+
+
+
+    <div class="carousel" data-flickity='{ "freeScroll": true }'>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/26s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/27s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/28s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/29s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/30s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+        <div class="carousel-cell">
+            <a href="#"><img src="image/31s.jpg" alt=""></a>
+            <div class="goodDescription">
+                <h5>Lorem ipsum dolor sit <br> amet consectetur </h5>
+                <span>$15</span>
+            </div>
+            <p>In perspiciatis nisi dicta, aperiam <br> magnam eaque laborum iste.</p>
+        </div>
+    </div>
+    <div class="formWrapper">
+        <h3 id="registerForm" class="titleForm">Make online reservation</h3>
+        <p class="textForm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quisquam illo praesentium
+            sequi in
+            cum, beatae maiores quae qui.</p>
+        <form action="#" method="post">
+            <div class="form">
+                <div class="formLeft">
+                    <input type="text" name="fullName" id="" placeholder="Full name">
+                    <input type="text" name="phone" id="" placeholder="Phone number">
+                    <input type="email" name="email" id="" placeholder="Email address">
+                </div>
+                <div class="formRight">
+                    <select name="personNumber" id="person">
+                        <option value="">1 person</option>
+                        <option value="">2 person</option>
+                        <option value="">3 person</option>
+                        <option value="">4 person</option>
+                        <option value="">5 person</option>
+                    </select>
+                    <input type="date" name="date" id="">
+                    <input type="time" name="time" id="">
+                </div>
+            </div>
+            <div class="submitWrapper">
+                <input type="submit" name="" id="" value="RESER VE TABLE">
+            </div>
+        </form>
+    </div>
+    <h2 class="titlePerson">What clients say about us</h2>
+    <p class="textPerson">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="sliderContainer">
+        <div class="carousel2" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell2">
+                <img src="image/person1.jpg" alt="">
+
+                <p>
+                    - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis
+                    quibusdam error repudiandae adipisci
+                    dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi. <br>
+                    <span>- LIAM SMITH</span>
+                </p>
+
+            </div>
+            <div class="carousel-cell2">
+                <img src="image/person2.jpg" alt="">
+                <p>
+                    - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis
+                    quibusdam error repudiandae adipisci
+                    dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi. <br>
+                    <span>- EMMA WILLIAMS</span>
+                </p>
+
+
+            </div>
+            <div class="carousel-cell2">
+                <img src="image/person3.jpg" alt="">
+                <p>
+                    - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis
+                    quibusdam error repudiandae adipisci
+                    dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi. <br>
+                    <span>- OLIVIA JOHNSON</span>
+                </p>
+
+
+            </div>
+        </div>
+
+    </div>
+    <hr style="margin: 50px 0px;color: var(--c444);">
+    <h3 class="titleImg">Upcoming events</h3>
+    <p class="textImg">Commodi rem veritatis quis eaque mollitia.</p>
+    <!-- __________________________________________________ -->
+    <div class="container Accordion hid">
+        <div class="dateText">
+            <p>29</p>
+            <span>sep</span>
+        </div>
+        <div class="btnText">
+            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea <br>quae!
+            </p>
+            <a>RESERVE A TABLE</a>
+        </div>
+    </div>
+
+    <div class="imgWrapper h100">
+        <img src="image/download2.png" alt="">
+        <div class="container">
+
+            <span>SEPTEMBER 30, 2017</span>
+            <h3>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas, aut ea quae!</h3>
+            <p>Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab. Facere est optio,
+                voluptate
+                molestias <br> aspernatur impedit perferendis odit?</p>
+            <a href="">RESERVE A TABLE</a>
+        </div>
+    </div>
+    <!-- ___________________________________________________________________ -->
+
+    <div class="container Accordion">
+        <div class="dateText">
+            <p>30</p>
+            <span>sep</span>
+        </div>
+        <div class="btnText">
+            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea
+                <br>quae!
+            </p>
+            <a>RESERVE A TABLE</a>
+        </div>
+    </div>
+
+    <div class="imgWrapper">
+        <img src="image/reserve2.jpg" alt="">
+        <div class="container">
+
+            <span>SEPTEMBER 30, 2017</span>
+            <h3>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas, aut ea quae!</h3>
+            <p>Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab. Facere est optio,
+                voluptate
+                molestias <br> aspernatur impedit perferendis odit?</p>
+            <a href="">RESERVE A TABLE</a>
+        </div>
+    </div>
+    <!-- _______________________________________________________________- -->
+    <div class="container Accordion">
+        <div class="dateText">
+            <p>31</p>
+            <span>sep</span>
+        </div>
+        <div class="btnText">
+            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea
+                <br>quae!
+            </p>
+            <a>RESERVE A TABLE</a>
+        </div>
+    </div>
+
+    <div id="img3" class="imgWrapper">
+        <img src="image/reserve3.jpg" alt="">
+        <div class="container">
+
+            <span>SEPTEMBER 30, 2017</span>
+            <h3>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas, aut ea quae!</h3>
+            <p>Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab. Facere est optio,
+                voluptate
+                molestias <br> aspernatur impedit perferendis odit?</p>
+            <a href="#img3">RESERVE A TABLE</a>
+        </div>
+    </div>
+    <!-- ___________________________________________________________________ -->
+
+    <div class="container-fulid inputWrapper">
+        <h3 class="titleImg">Newsletter</h3>
+        <p class="textImg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo <br>praesentium sequi
+            in
+            cum, beatae maiores quae qui.</p>
+        <div class="inputs">
+            <input type="text" name="coment" id="">
+            <input type="submit" name="" id="" value="SUBSCRIBE">
+        </div>
+
+    </div>
+
+
+    <h3 class="titleImg">Our gallery</h3>
+    <p class="textImg">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div class="container">
+        <div class="gallery">
+            <img style="grid-area: c1;" src="image/11.jpg" alt="">
+            <img style="grid-area: c2;" src="image/16.jpg" alt="">
+            <img style="grid-area: c3;" src="image/13.jpg" alt="">
+            <img style="grid-area: c4;" src="image/15.jpg" alt="">
+            <img style="grid-area: c5;" src="image/14.jpg" alt="">
+            <img style="grid-area: c6;" src="image/18.jpg" alt="">
+            <img style="grid-area: c7;" src="image/12.jpg" alt="">
+            <img style="grid-area: c8;" src="image/17.jpg" alt="">
+        </div>
+    </div>
+    <div class="showImage">
+        <img src="" alt="">
+    </div>
+
+
+    <!-- <div class="imgMap">
+        <img src="" alt="">
+    </div> -->
+    <!-- __________________________________________________________________________________________________ -->
+<section style="overflow: hidden;margin-top: 20px;" class="imgFooter">
+    <img width="1920" src="image/Screenshot 2024-05-27 144052.png" alt="">
+</section>
+    <!-- ____________________________________________________________________________________ -->
+    <footer>
+        <div class="container-fluid">
+            <div class="aboutBox">
+                <span>ABOUT US</span>
+                <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Corrupti dolorum, sint corporis<br>
+                    nostrum,
+                    possimus unde eos vitae eius quasi saepe.</p>
+            </div>
+
+
+            <div class="contactBox">
+                <span>CONTACT INFO</span>
+                <p><i class="fa-solid fa-location-dot"></i>
+                    1234 Altschul, Los Angeles, CA 10027-<br>0000</p>
+
+                <p><i class="fa-solid fa-phone"></i>
+                    +1 987 654 3210
+                </p>
+
+                <p><i class="fa-solid fa-envelope"></i>
+                    <a href="">admin@domain.com</a>
+                </p>
+            </div>
+            <div class="openHours">
+                <span>OPENING HOURS</span>
+                <p class="p1">
+                    MONDAY - THURSDAY
+                    10:00 AM - 11:00 PM
+                </p>
+                <p class="p2">
+                    FRIDAY - SUNDAY
+                    12:00 AM - 03:00 AM
+                </p>
+            </div>
+            <p style="margin-left: 40px;color: #c8c8c8;padding-bottom: 30px;">____© 2021 Touché. All rights reserved.</p> 
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="js/home.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        let accordion = document.querySelectorAll(".Accordion");
+        let content = document.getElementsByClassName("imgWrapper");
+        accordion[0].onclick = function () {
+            this.classList.add("hid")
+            accordion[1].classList.remove("hid")
+            accordion[2].classList.remove("hid")
+            content[0].classList.add("h100");
+            content[1].classList.remove("h100");
+            content[2].classList.remove("h100");
+        }
+        accordion[1].onclick = function () {
+            this.classList.add("hid")
+            accordion[0].classList.remove("hid")
+            accordion[2].classList.remove("hid")
+            content[1].classList.add("h100");
+            content[0].classList.remove("h100");
+            content[2].classList.remove("h100");
+        }
+        accordion[2].onclick = function () {
+            this.classList.add("hid")
+            accordion[0].classList.remove("hid")
+            accordion[1].classList.remove("hid")
+            content[2].classList.add("h100");
+            content[0].classList.remove("h100");
+            content[1].classList.remove("h100");
+        }
+        let images = document.querySelectorAll(".container .gallery img");
+        for (let i = 0; i < images.length; i++) {
+            images[i].addEventListener("click", function () {
+                let src = this.getAttribute("src");
+                document.querySelector(".showImage img").setAttribute("src", src);
+                document.querySelector(".showImage").classList.add("index100");
+                document.querySelector(".showImage").classList.remove("index0");
+            })
+        }
+        document.querySelector(".showImage").onclick = function () {
+            document.querySelector(".showImage").classList.remove("index100");
+            document.querySelector(".showImage").classList.add("index0");
+            document.querySelector(".showImage img").removeAttribute("src");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
