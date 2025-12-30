@@ -4,7 +4,7 @@
 
 **I used bootstrap grid system in this project.**
 
-## Benefits of this projects :
+## Benefits of this project :
 - I learned how Bootstrap grid system works
 - And as usual improved my HTML, CSS and JS knowledge
 
